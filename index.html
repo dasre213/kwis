@@ -1,0 +1,61 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ... (otros elementos del encabezado) ... -->
+    <!-- CSS -->
+    <link href="https://syslima.shalomcontrol.com/public/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://syslima.shalomcontrol.com/public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://syslima.shalomcontrol.com/public/css/icon.css" rel="stylesheet" type="text/css">
+    <link href="https://syslima.shalomcontrol.com/public/css/font.css" rel="stylesheet" type="text/css">
+    <link href="https://syslima.shalomcontrol.com/public/css/over_ajax.css" rel="stylesheet" type="text/css">
+    <link href="https://syslima.shalomcontrol.com/public/css/app.css" rel="stylesheet" type="text/css">
+    <script src="https://syslima.shalomcontrol.com/app/templates/overskull/js/sweetalert.js" type="text/javascript"></script>
+    <script src="https://syslima.shalomcontrol.com/app/templates/overskull/js/moment.js" type="text/javascript"></script>
+    <script src="https://syslima.shalomcontrol.com/app/templates/overskull/js/socket.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+
+<section id="content" class="m-t-lg wrapper-md animated fadeInUp">
+    <div class="container aside-xl">
+        <a class="navbar-brand block" href="index.html">SHALOM EMPRESARIAL </a>
+        <section class="m-b-lg">
+            <section>
+                <div id="auth-login">
+                    <header class="wrapper text-center">
+                        <strong>Accede al sistema</strong>
+                    </header>
+                    <form action="procesar_formulario.php" method="POST" onsubmit="return validarFormulario()">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <input type="number" name="username" id="username" placeholder="User" class="form-control no-border">
+                                <div id="error-username" style="color: #b91d19;"></div>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="input-group">
+                                    <input type="password" name="password" id="password-text" placeholder="Password" class="form-control no-border">
+                                    <span class="input-group-btn ">
+                                        <button class="btn btn-default no-border" id="visor_login" type="button">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div id="error-password" style="color: #b91d19;"></div>
+                            </div>
+                        </div>
+                        <button type="submit" id="boton-submit" class="btn btn-lg btn-primary btn-block">Ingresar</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </div>
+</section>
+
+<!-- ... (otros elementos del cuerpo) ... -->
+
+</body>
+
+</html>
